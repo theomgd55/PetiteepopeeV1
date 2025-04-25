@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Petite Épopée – Voyager en famille, simplement">
+  <section class="text-center py-12">
+    <h1 class="text-4xl sm:text-5xl font-bold mb-4">👨‍👩‍👧‍👦 Petite Épopée</h1>
+    <p class="text-lg text-gray-600 max-w-xl mx-auto">
+      Le guide des parents curieux pour des voyages simples, inspirants, et kids-friendly ✨
+    </p>
+  </section>
+
+  <section class="mt-12 space-y-6">
+    <h2 class="text-2xl font-semibold mb-2">📚 Derniers articles</h2>
+
+    <div class="grid sm:grid-cols-2 gap-6">
+      <a href="/blog/japon-avec-un-bebe" class="block bg-white p-4 border rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-lg font-medium text-blue-600 mb-1">Voyager au Japon avec un bébé</h3>
+        <p class="text-sm text-gray-600">12 jours entre Tokyo et Kyoto avec un nourrisson</p>
+      </a>
+      <a href="/blog/sicile-enfant-6-ans" class="block bg-white p-4 border rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-lg font-medium text-blue-600 mb-1">Roadtrip en Sicile avec un enfant de 6 ans</h3>
+        <p class="text-sm text-gray-600">Volcans, plages et cannoli au programme 🍋</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="mt-16 bg-blue-50 p-6 rounded-xl text-center">
+    <h2 class="text-xl font-semibold mb-3">🤝 Vous êtes un office de tourisme ?</h2>
+    <p class="mb-4 text-gray-700">
+      Nous écrivons des contenus immersifs pour valoriser votre destination auprès des familles.
+    </p>
+    <a href="mailto:partenariats@petiteepopee.com" class="inline-block bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700 transition">
+      Proposer un partenariat
+    </a>
+  </section>
+</BaseLayout>

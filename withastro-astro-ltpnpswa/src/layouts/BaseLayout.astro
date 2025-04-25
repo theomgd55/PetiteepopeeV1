@@ -1,0 +1,42 @@
+---
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/src/styles/global.css" />
+  </head>
+  <body class="bg-white text-gray-900 font-sans antialiased">
+
+    <!-- 🧭 Header (sticky nav) -->
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm backdrop-blur">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="/" class="text-xl font-bold text-blue-600 tracking-tight">Petite Épopée</a>
+        <nav class="space-x-5 text-sm text-gray-700">
+          <a href="/" class="hover:text-blue-600">Accueil</a>
+          <a href="/about" class="hover:text-blue-600">À propos</a>
+          <a href="/contact" class="hover:text-blue-600">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 🌍 Main content area -->
+    <main class="max-w-4xl mx-auto px-4 py-10">
+      <slot />
+    </main>
+
+    <!-- ⚓ Footer -->
+    <footer class="border-t mt-12 pt-6 pb-8 text-sm text-gray-500 text-center bg-gray-50">
+      <p class="mb-2">© 2025 Petite Épopée · Fait avec 💙 par des parents voyageurs</p>
+      <p>
+        <a href="mailto:hello@petiteepopee.com" class="hover:underline">Contact</a> · 
+        <a href="https://instagram.com/petiteepopee" target="_blank" class="hover:underline">Instagram</a>
+      </p>
+    </footer>
+
+  </body>
+</html>
